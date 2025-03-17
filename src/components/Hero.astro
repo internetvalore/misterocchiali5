@@ -1,0 +1,149 @@
+---
+---
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Occhiali da vista completi <span class="highlight">a partire da 60 Euro</span></h1>
+    <p>Scopri la nostra vasta collezione di montature e lenti di alta qualità a prezzi accessibili</p>
+    <div class="cta-buttons">
+      <a href="#offerte" class="btn btn-primary">Scopri le Offerte</a>
+      <a href="#contatti" class="btn btn-secondary">Contattaci</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="https://leprimescelte.com/wp-content/uploads/2025/03/misterocchiali-twenty.jpg" alt="Vetrina MisterOcchiali" />
+  </div>
+</section>
+
+<style>
+  .hero {
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    background: linear-gradient(to right, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.7) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://leprimescelte.com/wp-content/uploads/2025/03/misterocchiali.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    z-index: -1;
+  }
+
+  .hero-content {
+    flex: 1;
+    padding: 2rem;
+    max-width: 600px;
+    margin-left: 5%;
+    z-index: 2;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .highlight {
+    color: var(--secondary);
+    display: block;
+    font-size: 3.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .btn-primary {
+    background-color: var(--secondary);
+  }
+
+  .btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--secondary);
+    color: var(--secondary);
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--secondary);
+    color: white;
+  }
+
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .hero-image img {
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 992px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .hero-content {
+      margin: 0 auto;
+      padding-top: 3rem;
+    }
+
+    .cta-buttons {
+      justify-content: center;
+    }
+
+    .hero-image {
+      margin-top: 2rem;
+      width: 100%;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .highlight {
+      font-size: 2.8rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .highlight {
+      font-size: 2.2rem;
+    }
+
+    .hero p {
+      font-size: 1rem;
+    }
+
+    .cta-buttons {
+      flex-direction: column;
+    }
+  }
+</style>

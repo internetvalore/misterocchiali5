@@ -1,0 +1,127 @@
+---
+---
+
+<section id="prodotti" class="products">
+  <div class="container">
+    <div class="section-header">
+      <h2>I Nostri Prodotti</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="product-categories">
+      <div class="product-category">
+        <div class="icon">👓</div>
+        <h3>Occhiali da Vista</h3>
+        <p>Ampia selezione di montature per ogni stile e necessità, con prezzi a partire da 60€ completi di lenti.</p>
+      </div>
+      <div class="product-category">
+        <div class="icon">🕶️</div>
+        <h3>Occhiali da Sole</h3>
+        <p>Proteggi i tuoi occhi con stile. Occhiali da sole di qualità con protezione UV garantita.</p>
+      </div>
+      <div class="product-category">
+        <div class="icon">🔍</div>
+        <h3>Lenti a Contatto</h3>
+        <p>Lenti a contatto giornaliere, quindicinali e mensili delle migliori marche.</p>
+      </div>
+      <div class="product-category">
+        <div class="icon">🧪</div>
+        <h3>Accessori</h3>
+        <p>Custodie, cordini, spray detergenti e tutto ciò che serve per la cura dei tuoi occhiali.</p>
+      </div>
+    </div>
+    <div class="product-features">
+      <div class="feature">
+        <h4>Lenti di Qualità</h4>
+        <p>Utilizziamo solo lenti di alta qualità con trattamenti antigraffio, antiriflesso e protezione luce blu.</p>
+      </div>
+      <div class="feature">
+        <h4>Montature per Tutti</h4>
+        <p>Dalle montature classiche a quelle più trendy, abbiamo soluzioni per tutti i gusti e tutte le età.</p>
+      </div>
+      <div class="feature">
+        <h4>Garanzia</h4>
+        <p>Tutti i nostri prodotti sono coperti da garanzia e assistenza post-vendita.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .products {
+    background-color: white;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .section-header h2 {
+    font-size: 2.5rem;
+    color: var(--text-dark);
+  }
+
+  .divider {
+    height: 4px;
+    width: 60px;
+    background-color: var(--secondary);
+    margin: 0 auto;
+  }
+
+  .product-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .product-category {
+    background-color: var(--background-alt);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .product-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .product-category h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-dark);
+  }
+
+  .product-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+
+  .feature {
+    padding: 1.5rem;
+    border-left: 4px solid var(--secondary);
+    background-color: var(--background-alt);
+    border-radius: 0 8px 8px 0;
+  }
+
+  .feature h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-dark);
+  }
+
+  @media (max-width: 768px) {
+    .section-header h2 {
+      font-size: 2rem;
+    }
+  }
+</style>

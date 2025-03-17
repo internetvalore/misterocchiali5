@@ -1,0 +1,136 @@
+---
+---
+
+<section id="galleria" class="gallery">
+  <div class="container">
+    <div class="section-header">
+      <h2>La Nostra Galleria</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://leprimescelte.com/wp-content/uploads/2025/03/misterocchiali.jpg" alt="Vetrina MisterOcchiali" />
+        <div class="overlay">
+          <div class="caption">La nostra vetrina</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://leprimescelte.com/wp-content/uploads/2025/03/misterocchiali-twenty.jpg" alt="Ingresso MisterOcchiali" />
+        <div class="overlay">
+          <div class="caption">L'ingresso del negozio</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://leprimescelte.com/wp-content/uploads/2025/03/misterocchiali-twenty-1.jpg" alt="Interno MisterOcchiali" />
+        <div class="overlay">
+          <div class="caption">L'interno del negozio</div>
+        </div>
+      </div>
+      <div class="gallery-item special-item">
+        <img src="https://leprimescelte.com/wp-content/uploads/2025/03/Twenty-117x219-10-2023_02.jpg" alt="Negozio MisterOcchiali Twenty" />
+        <div class="overlay">
+          <div class="caption">Il nostro negozio al Twenty</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .gallery {
+    background-color: white;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .section-header h2 {
+    font-size: 2.5rem;
+    color: var(--text-dark);
+  }
+
+  .divider {
+    height: 4px;
+    width: 60px;
+    background-color: var(--secondary);
+    margin: 0 auto;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    height: 300px;
+  }
+
+  .special-item {
+    height: auto;
+    min-height: 300px;
+  }
+
+  .special-item img {
+    object-fit: contain;
+    background-color: #f5f5f5;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gallery-item:hover .overlay {
+    height: 100%;
+  }
+
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+
+  .caption {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .section-header h2 {
+      font-size: 2rem;
+    }
+
+    .gallery-item {
+      height: 250px;
+    }
+    
+    .special-item {
+      height: auto;
+      min-height: 250px;
+    }
+  }
+</style>
